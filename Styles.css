@@ -1,0 +1,122 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /* border-radius: x 10px,5px,2px,1px y 1px,2px,5px,10px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card .highlight {
+    color: #8e44ad;
+}
+
+.card p {
+    color: #555;
+    font-size: 1em;
+}
+
+.btn {
+    background-color: #f1c40f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: #d4ac0d;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+    color: #333;
+}
+
+/* Custom styles for each card */
+.card2 .chat-box {
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.card3 .chart {
+    margin-top: 15px;
+}
+
+.card3 .bar {
+    background-color: #e1e4ea;
+    height: 20px;
+    width: 20%;
+    margin: 5px auto;
+}
+
+.card3 .bar.active {
+    background-color: #8e44ad;
+}
+
+.card5 .calendar {
+    margin-top: 10px;
+    color: #555;
+}
+
+.card5 .dots span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #8e44ad;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.card6 .avatars span {
+    font-size: 2em;
+    margin: 0 5px;
+}
+
+.card7 p {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.card8 .highlight {
+    color: #27ae60;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
